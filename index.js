@@ -14,21 +14,13 @@ const fetchData =  (baseUrl) => {
   
 }
 
+// h-[200px] w-1/2 bg-black-300 text-green-500 p-[60px] font-normal italic ml-[500px]
 
 function displayImages(Items) {
     const card = document.createElement('div');
-    card.style.height = '200px';
-    card.style.width = '50%';
-    card.style.backgroundColor = 'black';
-    card.style.color = 'aliceblue';
-    card.style.padding = '60px';
-    card.style.fontFamily = '"Poppins", serif';
-    card.style.fontWeight = '300';
-    card.style.fontStyle = 'italic';
-    card.style.marginLeft = '500px';
     const title = document.createElement('h4');
-    title.innerHTML = Items.quote;
 
+    title.innerHTML = Items.quote;
     card.appendChild(title);
 
     root.appendChild(card);
