@@ -17,13 +17,8 @@ const fetchData =  (baseUrl) => {
 // h-[200px] w-1/2 bg-black-300 text-green-500 p-[60px] font-normal italic ml-[500px]
 
 function displayImages(Items) {
-    const card = document.createElement('div');
-    const title = document.createElement('h4');
-
-    title.innerHTML = Items.quote;
-    card.appendChild(title);
-
-    root.appendChild(card);
+    const text = document.getElementById('quote');
+    text.innerHTML = Items.quote;
 }
 
-fetchData(baseUrl)
+fetchData(baseUrl);
